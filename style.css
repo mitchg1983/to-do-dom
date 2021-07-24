@@ -1,3 +1,51 @@
 h1 {
     color: orange;
 }
+
+body {
+    background-color: rgb(195, 195, 195);
+}
+
+.app {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+}
+
+.background {
+    background-color: rgb(255, 248, 229);
+    height: 800px;
+    width: 600px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.top-buttons {
+    width: 90%;
+    height: 75px;
+    border: solid red 1px;
+    position: absolute;
+    top: 3%;
+
+}
+
+.task-area {
+    width: 90%;    
+    height: 550px;
+    border: solid blue 1px;
+    position: absolute;
+    top: 15%;
+}
+
+.bot-buttons {
+    width: 90%;    
+    height: 75px;
+    border: solid green 1px;
+    position: absolute;
+    bottom: 3%;
+
+}
