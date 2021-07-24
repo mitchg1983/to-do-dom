@@ -24,13 +24,14 @@ body {
     flex-flow: column;
 }
 
-.top-buttons {
+.top-panel {
     width: 90%;
     height: 75px;
     border: solid red 1px;
     position: absolute;
     top: 3%;
-
+display: flex;
+flex-flow: row;
 }
 
 .task-area {
@@ -39,6 +40,10 @@ body {
     border: solid blue 1px;
     position: absolute;
     top: 15%;
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    list-style: circle;
 }
 
 .bot-buttons {
@@ -48,4 +53,33 @@ body {
     position: absolute;
     bottom: 3%;
 
+}
+
+.top-button {
+height: 50px;
+width: 50px;
+border: solid black 3px;
+margin: 3px;
+
+}
+
+.add-new-task {
+    background-color: lightblue;
+}
+
+.edit-tasks {
+    background-color: lightcoral;
+}
+
+.task {
+
+
+    height: 40px;
+    width: 400px;
+    border: lightsalmon solid 4px;
+    margin: 5px;
+}
+
+ul.displayList {
+    list-style-type: circle;
 }
