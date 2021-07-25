@@ -18,7 +18,7 @@ body {
     height: 800px;
     width: 600px;
     border-radius: 30px;
-    position: relative;
+
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -28,17 +28,35 @@ body {
     width: 90%;
     height: 75px;
     border: solid red 1px;
-    position: absolute;
     top: 3%;
 display: flex;
-flex-flow: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.top-button-panel {
+
+    border: solid 1px black;
+    display: flex;
+    width: 200px;
+    margin: 5px;
+}
+
+.info-panel {
+
+    border: solid 1px pink;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
 }
 
 .task-area {
     width: 90%;    
     height: 550px;
     border: solid blue 1px;
-    position: absolute;
+
     top: 15%;
     display: flex;
     flex-flow: column;
@@ -50,7 +68,7 @@ flex-flow: row;
     width: 90%;    
     height: 75px;
     border: solid green 1px;
-    position: absolute;
+
     bottom: 3%;
 
 }
