@@ -19,7 +19,6 @@ let totalT = -1;
 
 updateInfoBar("add");
 
-
 //
 //
 //
@@ -62,27 +61,21 @@ function addToList(task) {
   newLI.on("click", function () {
     //task item removal function
     if (editing === true) {
-      console.log("Editing is true.", editing);
-
       //Save the name of the task we are deleting
       const taskToRemove = $(newLI).text();
 
       for (const taskObject of tasks) {
         if (taskObject.taskName === taskToRemove) {
-          console.log("We found something.");
-
           tasks.splice(tasks.indexOf(taskObject), 1);
-        };
-      };
+        }
+      }
 
       $(newLI).remove();
 
-      updateInfoBar('remove');
-
-
+      updateInfoBar("remove");
     } else {
-      return console.log("Editing is false.", editing);
-    };
+      return;
+    }
   });
 
   //Add this element to the 'clipboard' on the app
@@ -92,24 +85,22 @@ function addToList(task) {
   //
   //Update the infobar for the user
 
-
-  updateInfoBar('add');
+  updateInfoBar("add");
 }
 
 //Update the display for the infobar on the app
 function updateInfoBar(input) {
-
-  if (input === 'add') {
+  if (input === "add") {
     totalT++;
-  };
+  }
 
-  if (input === 'remove') {
+  if (input === "remove") {
     totalT--;
-  };
+  }
 
-  if (input === 'complete') {
+  if (input === "complete") {
     checkedT++;
-  };
+  }
 
   //Task counter display
   const currentTasks = checkedT + " / " + totalT;
