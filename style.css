@@ -86,7 +86,17 @@ margin: 3px;
 }
 
 .edit-tasks {
+    display: flex;
+}
+
+.no-edit {
+
     background-color: lightcoral;
+
+}
+
+.yes-edit {
+    background-color: lightgreen;
 }
 
 .task {
